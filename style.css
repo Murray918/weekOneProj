@@ -16,18 +16,22 @@ Button Text (Hover): #FFFFFF
 Input Border Bottom: #968772*/
 /*Input Border Bottom (Focus): #967343*/
 
-body {
+
+html, body {
   font-family: 'Merriweather', serif;
   /*font-family: 'Roboto', sans-serif;*/
    background-color: #F2F1EA;
    font-weight: lighter;
-   width: 1280px;
+   width: 100%  ;
+   margin: 0;
 }
 
 header {
   display: flex;
-  /*height: 60px;*/
+  height: 60px;
   width: 100%;
+  color: #2B2F26;
+  background-color: #FFFFFF;
 }
 
 p {
@@ -37,40 +41,40 @@ p {
 
 nav {
   background-color: #FFFFFF;
-  color: #2B2F26;
-  /*text-align: center;*/
   display: flex;
+  width: 100%;
+
+
+
+  /*text-align: center;*/
+
   /*justify-content: center;*/
 }
 
 #logo {
-  height: 43%;
+  height: 58%;
 }
 
 #logoDiv {
   display: flex;
   align-items: center;
+  flex-grow: 1;
 }
 
 .navDiv {
   display: flex;
   align-items: center;
+  flex-grow: 2;
 
 }
 .navDiv a {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 6%;
+  /*padding-right: ;*/
 }
 
 
-nav > div {
 
-  flex-grow: 1;
-  /*align-items: center;*/
-}
-
-
-.wholeBout{
+.wholeAbout{
 }
 
 
@@ -105,13 +109,17 @@ h1 {
   padding-bottom: 25px;
 }
 
+h2  {
+  text-align: center;
+}
+
 .imageAbout2{
   height: 200px;
   text-align: center;
   background-image: url(images/optimized/background-3.jpg);
   background-position: center;
   background-size: cover;
-  width: 900px;
+  width: 100%;
 }
 
 .shelfInfo {
@@ -145,8 +153,9 @@ h1 {
 table {
   border: 1px solid #131511;
   border-collapse: collapse;
+  margin-bottom: 50px
 
-}
+};
 th{
   border: 1px solid #131511;
   border-collapse: collapse;
@@ -176,8 +185,61 @@ td {
 
 }
 
+.prod-pic{
+  /*display: flex;*/
+}
 
-.img1{
+
+.homePicTxt {
+  background-color: #2b2f26;
+  text-align: left;
+  padding-left: 15;
+  color: #ffffff;
+  margin-top: 235px ;
+  font-size: 1.22em;
+
+}
+
+#txt1 {
+    width: 200px;
+
+
+}
+
+#txt2 {
+    width: 45px;
+
+
+}
+
+#txt3 {
+    width: 87px;
+
+}
+
+#txt4 {
+    width: 90px;
+
+}
+
+#txt5 {
+  width: 186px;
+
+}
+
+#txt6 {
+width: 166px;
+
+}
+
+#txt7  {
+    width: 186px;
+
+}
+
+
+
+#img1{
 /*flex-basis: ;*/
 height: 300PX;
 margin: 7px;
@@ -185,9 +247,10 @@ width: 57%;
 background-size: cover;
 background-position: center;
 background-image: url(images/optimized/product-1.jpg);
+
 }
 
-.img2 {
+#img2 {
 height: 300PX;
 margin: 7px;
 width: 18%;
@@ -196,7 +259,7 @@ background-position: center;
 background-image: url(images/optimized/product-2.jpg);
 }
 
-.img3 {
+#img3 {
 background-image: url(images/optimized/product-3.jpg);
 height: 300PX;
 margin: 7px;
@@ -205,7 +268,7 @@ background-size: cover;
 background-position: center;
 }
 
-.img4 {
+#img4 {
 background-image: url(images/optimized/product-4.jpg);
 height: 300PX;
 margin: 7px;
@@ -215,7 +278,7 @@ background-position: center;
 
 }
 
-.img5 {
+#img5 {
 background-image: url(images/optimized/product-5.jpg);
 height: 300PX;
 margin: 7px;
@@ -224,7 +287,7 @@ background-size: cover;
 background-position: center;
 }
 
-.img6 {
+#img6 {
 background-image: url(images/optimized/product-6.jpg);
 height: 300PX;
 width: 37.5%;
@@ -234,16 +297,24 @@ background-size: cover;
 background-position: center;
 }
 
-.img7 {
+#img7 {
 background-image: url(images/optimized/product-7.jpg);
 height: 300PX;
 margin: 7px;
 width: 18%;
 background-size: cover;
 background-position: center;
+margin-bottom: 15px;
 }
 
 .newsLetter {
   background-image: url(images/optimized/background-2.jpg);
   background-size: 100%;
+}
+footer {
+  padding: 10px;
+  background-color: rgb(48,50,43);
+  color: #ffffff;
+  font-size: 1.36em;
+
 }
